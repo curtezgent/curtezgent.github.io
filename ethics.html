@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Engineering Ethics · Curtez Anderson-Gentry</title>
+  <meta name="description" content="Curtez Anderson-Gentry’s reflection on engineering ethics and the 2018 Uber crash in Tempe, Arizona.">
+  <meta name="author" content="Curtez Anderson-Gentry">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="index.html">Curtez Anderson-Gentry</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="ethics.html" aria-current="page">Ethics</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Engineering ethics</p>
+        <h1 class="display">Safety Isn’t a Setting</h1>
+        <p class="lede">A reflection on professional responsibility, built around the 2018 Uber self-driving crash in Tempe, Arizona.</p>
+        <p class="wordcount">About 940 words · Course case from E299 Engineering Professionalization &amp; Ethics</p>
+      </header>
+
+      <div class="ethics-layout">
+        <article class="prose" aria-labelledby="essay-title">
+          <h2 id="essay-title" class="visually-hidden">Reflection</h2>
+          <p>On March 18, 2018, a self-driving Uber test car hit and killed Elaine Herzberg as she crossed a street at night in Tempe, Arizona. Many people share the blame: the backup driver who was looking at her phone, the Uber leaders who pushed the program forward, and the state that allowed testing with little oversight. But I believe the engineers carry the most responsibility. It is an engineer’s duty to make sure a product is safe for the humans around it. In this case, the people who designed the system made choices that put a smoother ride ahead of a person’s life.</p>
+          <h2>A safety feature traded for comfort</h2>
+          <p>The car’s sensors detected Herzberg 5.6 seconds before impact, but the software never correctly identified her as a pedestrian or predicted where she was going (NTSB, 2019). That is already a serious design failure. What made it deadly is that nothing was set up to catch the mistake. Volvo’s built-in emergency braking was turned off whenever Uber’s software was driving, and Uber’s own software was not allowed to make emergency stops. According to the NTSB’s preliminary report, Uber made that choice to reduce “erratic vehicle behavior.” The system relied on the human operator to step in, but it was not designed to alert her (NTSB, 2018).</p>
+          <p>In plain terms, the engineers traded a safety feature for a smoother ride. If I had been on that team, I would have pushed to keep emergency braking on no matter what. A jerky ride is a complaint. A missed pedestrian is a death. Those two outcomes should never be weighed on the same scale.</p>
+          <h2>Cost, speed, and who pays</h2>
+          <p>Cost played a role too. Around October 2017, Uber went from two employees in each test car to one (CNBC, 2018). That made testing cheaper, but it put all of the monitoring on a single person. Each of these decisions saved Uber money or made the ride feel better, and each one moved more of the risk onto people outside the car.</p>
+          <p>That is the part of this case I keep coming back to. Herzberg never agreed to be part of an experiment. The social cost of Uber’s testing landed on people who had no say in it, and I don’t think that is fair. No company has the right to make that trade for the public.</p>
+          <h2>The law is a floor</h2>
+          <p>Keeping the public safe is a shared job. It is the government’s responsibility to make sure a vehicle is street legal and safe for the people who never consented to it, and the NTSB found that Arizona’s oversight of self-driving tests was not enough (NTSB, 2019). It is the company’s responsibility to release a product that is safe and has been tested before it reaches the public.</p>
+          <p>The legal outcome shows why this matters. In 2019, prosecutors decided Uber was not criminally liable. In 2023, the backup driver pleaded guilty to endangerment and was sentenced to three years of supervised probation (Reuters, 2023). The law held the person in the driver’s seat accountable, and she did share the blame. But legal and ethical are not the same thing. The decisions that made this crash possible were made by engineers long before she got in the car.</p>
+          <h2>Is the future worth it?</h2>
+          <p>I believe self-driving cars will be worth it in the future. They are pitched as safer and better for the environment, with fewer crashes caused by human error and more efficient driving. But a benefit that might come someday does not give anyone the right to risk the life of a person who never agreed to it today. For this technology to be sustainable, it has to earn people’s trust: testing in simulation and on closed courses, keeping backup safety systems on, and moving onto public roads only when the product is ready. A shortcut that costs a life also costs public trust, and without trust that future may never come.</p>
+          <h2>What this means for my own work</h2>
+          <p>These ideas already show up in my own projects. When I built Ocean Cleanup Crew, a C game for kids ages 7 to 12, the age of my players shaped my design choices. [Add one specific example, such as how you kept the instructions, controls, or content right for that age.]</p>
+          <p>CourtVisionAI, my app that predicts NBA game outcomes and player props, raises a different question, because some people will use its predictions to place bets. I don’t believe that makes me responsible for those bets. A user can treat the predictions as helpful insight or bet exactly what the app says, and either way it is their own free choice. That is the key difference from the Uber case. Herzberg never chose to take on any risk. A person who places a bet does.</p>
+          <h2>The principles I’m taking with me</h2>
+          <p>Every engineering principle matters: safety, cost, environmental impact, sustainability, social impact, and the law. The Uber case showed me what happens when one of them, like cost or a smooth ride, quietly outranks the rest. As I move toward a career in AI and machine learning, I want to hold myself to a few rules:</p>
+          <ul>
+            <li>I won’t turn off a safety feature to make a product smoother, cheaper, or faster to ship.</li>
+            <li>I’ll make sure a system is tested before it reaches people who never agreed to be part of the test.</li>
+            <li>I’ll design for the people who will use what I build and the people who live around it.</li>
+            <li>I’ll weigh all of these principles together instead of letting one decide for the others.</li>
+          </ul>
+          <p>The systems I want to build will make decisions about real people. The Uber crash is a reminder that those people are the whole reason the engineering matters.</p>
+
+          <h2>Sources</h2>
+          <ol class="sources">
+            <li>National Transportation Safety Board. (2019). <em>Collision between vehicle controlled by developmental automated driving system and pedestrian, Tempe, Arizona, March 18, 2018</em> (Highway Accident Report HAR-19/03). <a href="https://www.ntsb.gov/investigations/Pages/HWY18MH010.aspx">NTSB investigation page</a></li>
+            <li>National Transportation Safety Board. (2018). Preliminary report, investigation HWY18MH010. As reported by KPBS, May 24, 2018. <a href="https://www.kpbs.org/news/2018/05/24/ntsb-uber-self-driving-car-had-disabled-emergency">KPBS article on the preliminary report</a></li>
+            <li>CNBC. (2018, March 23). Uber’s self-driving cars were struggling before Arizona crash. <a href="https://www.cnbc.com/2018/03/23/ubers-self-driving-cars-were-struggling-before-arizona-crash.html">CNBC article</a></li>
+            <li>Reuters. (2023, July 31). Backup driver in Uber self-driving crash pleads guilty. Republished by BusinessDay. <a href="https://www.businessday.co.za/bd/life/motoring/2023-07-31-backup-driver-in-uber-self-driving-crash-pleads-guilty/">Reuters report via BusinessDay</a></li>
+          </ol>
+          <p class="ai-note"><strong>How I wrote this:</strong> The opinions and arguments in this reflection are mine. I used Claude, an AI assistant, to organize my notes into paragraphs and to find sources for the case facts listed above.</p>
+        </article>
+
+        <aside class="case-box" aria-labelledby="case-title">
+          <h2 id="case-title">The case at a glance</h2>
+          <dl>
+            <div>
+              <dt>What happened</dt>
+              <dd>On March 18, 2018, at about 10 p.m., an Uber test vehicle driving itself struck and killed Elaine Herzberg as she crossed N. Mill Avenue in Tempe, Arizona.</dd>
+            </div>
+            <div>
+              <dt>The vehicle</dt>
+              <dd>A 2017 Volvo XC90 fitted with Uber’s developmental automated driving system. Volvo’s factory automatic emergency braking was turned off whenever Uber’s system was driving.</dd>
+            </div>
+            <div>
+              <dt>What the system saw</dt>
+              <dd>It detected her 5.6 seconds before impact but never correctly classified her as a pedestrian or predicted her path.</dd>
+            </div>
+            <div>
+              <dt>What investigators found</dt>
+              <dd>The NTSB named the safety operator’s failure to monitor the road, while distracted by her phone, as the probable cause. It cited Uber’s inadequate safety culture and Arizona’s insufficient oversight of automated-vehicle testing as contributing factors.</dd>
+            </div>
+          </dl>
+          <p class="source">Source: <a href="https://www.ntsb.gov/investigations/Pages/HWY18MH010.aspx">NTSB report HAR-19/03</a> (2019).</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="contact">
+        <h2>Get in touch</h2>
+        <ul>
+          <li><a href="mailto:curtezgent@gmail.com">curtezgent@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/curtez-gentry-0a7111399">LinkedIn profile</a></li>
+        </ul>
+      </div>
+      <p class="fineprint">AI disclosure: I designed and drafted this site with help from Claude, an AI assistant made by Anthropic. I reviewed, edited, and verified everything on it, and the opinions are my own.<br>© 2026 Curtez Anderson-Gentry</p>
+    </div>
+  </footer>
+</body>
+</html>

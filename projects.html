@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Projects · Curtez Anderson-Gentry</title>
+  <meta name="description" content="Engineering projects by Curtez Anderson-Gentry: Hack32, Ocean Cleanup Crew, and CourtVisionAI.">
+  <meta name="author" content="Curtez Anderson-Gentry">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="index.html">Curtez Anderson-Gentry</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="ethics.html">Ethics</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Projects</p>
+        <h1 class="display">Things I’ve built</h1>
+        <p class="lede">Three projects that took me from hardware to machine learning. For each one: the challenge, my role, the methods I used, and how it turned out.</p>
+      </header>
+
+      <article id="hack32" class="project" aria-labelledby="hack32-title">
+        <div class="project-head">
+          <p class="meta">Computer Architecture (E110) · Team of four · Spring 2026</p>
+          <h2 id="hack32-title">Hack32: a 32-bit CPU architecture</h2>
+          <p class="summary">A 32-bit reimagining of the Hack computer from Nand2Tetris, with 32 registers, three instruction formats, load/store memory, and a hardware multiply instruction.</p>
+        </div>
+        <figure class="figure">
+          <img src="assets/img/hack32-formats.jpg" width="1600" height="900" loading="lazy" alt="Slide titled Three 32-bit instruction formats. R-type: a 6-bit opcode, three 5-bit register fields (rd, rs1, rs2), and an 11-bit funct field. I-type: a 6-bit opcode, rd, rs1, and a 16-bit immediate. J-type: a 6-bit opcode and a 26-bit address.">
+          <figcaption>Hack32’s three instruction formats, from the slide deck I made for our presentation.</figcaption>
+        </figure>
+        <dl class="facts">
+          <div>
+            <dt>Challenge</dt>
+            <dd>The original Hack computer has only two registers, 16-bit instructions, and no multiply instruction, so even simple math turns into slow software loops. We had to redesign it as a 32-bit machine while keeping what makes Hack simple to learn.</dd>
+          </div>
+          <div>
+            <dt>My role</dt>
+            <dd>I created the Hack32 architecture and made the slide deck. In our presentation I covered the ALU examples, load/store memory, and control flow (branches and jumps).</dd>
+          </div>
+          <div>
+            <dt>Methods &amp; skills</dt>
+            <dd>
+              <ul class="tags" aria-label="Methods and skills">
+                <li>Computer architecture</li><li>Instruction set design</li><li>Digital logic</li><li>HDL</li><li>Python</li><li>Slide design &amp; presenting</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Outcome</dt>
+            <dd>Our design covered every requirement in the project brief, and its hardware multiply is up to about 32× faster than the software multiply loop base Hack relies on. Our professor asked for a copy to share with future classes.</dd>
+          </div>
+          <div>
+            <dt>Team</dt>
+            <dd>Ethan Silwal, Kyle Lin, and Triston Abrams. We borrowed ideas from RISC-V and MIPS.</dd>
+          </div>
+          <div>
+            <dt>See it</dt>
+            <dd><a href="assets/Hack32_Slides.pdf">Hack32 slide deck (PDF, 13 slides)</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article id="ocean-cleanup-crew" class="project" aria-labelledby="occ-title">
+        <div class="project-head">
+          <p class="meta">Intro Programming (E111) · Solo project</p>
+          <h2 id="occ-title">Ocean Cleanup Crew</h2>
+          <p class="summary">An educational game in C that teaches kids ages 7–12 about keeping the ocean clean.</p>
+        </div>
+        <figure class="figure">
+          <!-- Swap this placeholder for: <img src="assets/img/ocean-cleanup-crew.png" alt="Describe what the image shows"> -->
+          <div class="placeholder">[Add a gameplay screenshot]</div>
+          <figcaption>[Caption: what the image shows]</figcaption>
+        </figure>
+        <dl class="facts">
+          <div>
+            <dt>Challenge</dt>
+            <dd>Turn a learning goal, UN Sustainable Development Goal 14 (Life Below Water), into a game that elementary-age kids would actually want to play, written in C.</dd>
+          </div>
+          <div>
+            <dt>My role</dt>
+            <dd>Solo project. I designed and built the whole game, from turning the learning objective into gameplay to writing it in C.</dd>
+          </div>
+          <div>
+            <dt>Methods &amp; skills</dt>
+            <dd>
+              <ul class="tags" aria-label="Methods and skills">
+                <li>C</li><li>Game design</li><li>Designing for kids</li><li>SDG 14</li><li>Documentation</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Outcome</dt>
+            <dd>Submitted with a video walkthrough, an ethics paper, and a self-graded rubric. [Add a link to the video walkthrough if it’s public.]</dd>
+          </div>
+        </dl>
+      </article>
+
+      <article id="courtvisionai" class="project" aria-labelledby="cv-title">
+        <div class="project-head">
+          <p class="meta">Personal project · In progress</p>
+          <h2 id="cv-title">CourtVisionAI</h2>
+          <p class="summary">A full-stack web app that uses machine learning to predict NBA game outcomes and player props from live data.</p>
+        </div>
+        <figure class="figure">
+          <!-- Swap this placeholder for: <img src="assets/img/courtvisionai.png" alt="Describe what the image shows"> -->
+          <div class="placeholder">[Add a CourtVisionAI screenshot]</div>
+          <figcaption>[Caption: what the image shows]</figcaption>
+        </figure>
+        <dl class="facts">
+          <div>
+            <dt>Challenge</dt>
+            <dd>Turn raw NBA statistics into game-outcome and player-prop predictions people can read at a glance, with a backend that serves a model and a fast, modern front end.</dd>
+          </div>
+          <div>
+            <dt>My role</dt>
+            <dd>Solo developer. I designed and built the whole stack, from the data pipeline to the interface.</dd>
+          </div>
+          <div>
+            <dt>Methods &amp; skills</dt>
+            <dd>
+              <ul class="tags" aria-label="Methods and skills">
+                <li>Python</li><li>Flask</li><li>Machine learning</li><li>Next.js</li><li>REST APIs</li><li>UI design</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Outcome</dt>
+            <dd>In active development. It predicts game winners and player props using live game data from the BALLDONTLIE API.</dd>
+          </div>
+        </dl>
+      </article>
+
+      <section class="also" aria-labelledby="also-title">
+        <h2 id="also-title">Also in progress</h2>
+        <ul>
+          <li><strong>Intelligent Systems I (E221).</strong> Python and Jupyter labs where I train and evaluate classification models with scikit-learn.</li>
+          <li><strong>Engineering Ethics (E299).</strong> A team case study and class activity on the 2018 Uber self-driving crash in Tempe, Arizona. <a href="ethics.html">Read my reflection</a>.</li>
+          <li><strong>Nand2Tetris.</strong> Building a computer from NAND gates up to a working CPU in HDL, the foundation Hack32 was built on.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="contact">
+        <h2>Get in touch</h2>
+        <ul>
+          <li><a href="mailto:curtezgent@gmail.com">curtezgent@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/curtez-gentry-0a7111399">LinkedIn profile</a></li>
+        </ul>
+      </div>
+      <p class="fineprint">AI disclosure: I designed and drafted this site with help from Claude, an AI assistant made by Anthropic. I reviewed, edited, and verified everything on it, and the opinions are my own.<br>© 2026 Curtez Anderson-Gentry</p>
+    </div>
+  </footer>
+</body>
+</html>
